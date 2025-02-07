@@ -6,7 +6,7 @@ class TestApp(unittest.TestCase):
         tester = app.test_client()
         response = tester.get('/')
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.data, b"Python App Hosting jhala")
+        self.assertEqual(response.data, b"Hello i am now autotesting a python page on jenkins")
 
 
 if __name__ == "__main__":
